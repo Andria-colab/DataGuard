@@ -1,0 +1,5 @@
+# Ignore the large generated/processed files
+data/crime_data_clean.csv
+data/data_for_tree_models.csv
+data/data_for_logistic.csv
+
