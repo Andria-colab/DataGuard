@@ -22,8 +22,7 @@ data/
 ├── data_for_logistic.csv
 ├── data_for_tree_models.csv
 
-
-
+```
 ### What is XGBoost? 
 For the advanced part of this project, I used XGBoost (Extreme Gradient Boosting). While Random Forest performed well, XGBoost is more powerful and is widely used in real world machine learning tasks.
 
