@@ -1,3 +1,4 @@
+# Python version required: 3.12.4
 pandas
 numpy
 matplotlib
