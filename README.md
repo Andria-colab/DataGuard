@@ -33,8 +33,37 @@ Crime prediction is challenging due to strong class imbalance and complex relati
 - Determine whether advanced models outperform simpler ones
 
 ## Dataset
+https://data.cityofchicago.org/Public-Safety/Crimes-2015/vwwp-7yr9/data_preview
 
-Due to GitHub file size limits, the full datasets are hosted externally.
+### Chicago Crime Dataset - Column Descriptions
+
+| Attribute | Data Type | Description |
+| :--- | :--- | :--- |
+| **ID** | `Integer` | Unique identifier for the record. |
+| **Case Number** | `String` | The Chicago Police Department RD Number (Records Division Number). Unique to the incident. |
+| **Date** | `String/DateTime` | Date and time the incident occurred. |
+| **Block** | `String` | The address where the incident occurred. Note that the specific street number is partially redacted (e.g., `015XX`) for privacy. |
+| **IUCR** | `String` | **Illinois Uniform Crime Reporting** code. A four-digit code that classifies the specific criminal incident. |
+| **Primary Type** | `String` | Broad category of the crime (e.g., `THEFT`, `BATTERY`, `NARCOTICS`). |
+| **Description** | `String` | Detailed sub-category description of the crime (e.g., `OVER $500`, `SIMPLE`, `TO VEHICLE`). |
+| **Location Description** | `String` | Description of the location where the incident occurred (e.g., `STREET`, `APARTMENT`, `SIDEWALK`). |
+| **Arrest** | `Boolean` | Indicates whether an arrest was made (`True` or `False`). |
+| **Domestic** | `Boolean` | Indicates whether the incident was domestic-related as defined by the Illinois Domestic Violence Act. |
+| **Beat** | `Integer` | The smallest police geographic area. A beat is a specific patrol area where police officers are assigned. |
+| **District** | `Integer` | Indicates the police district where the incident occurred. Districts are comprised of multiple beats. |
+| **Ward** | `Float` | The City Council district (political boundary) where the incident occurred. Chicago has 50 wards. |
+| **Community Area** | `Float` | Identifies the community area (neighborhood) where the incident occurred. Chicago has 77 community areas. |
+| **FBI Code** | `String` | The crime classification code used for FBI Uniform Crime Reporting (e.g., `06` for Larceny/Theft). |
+| **X Coordinate** | `Float` | The x-coordinate of the location (State Plane Illinois East NAD 1983 projection). |
+| **Y Coordinate** | `Float` | The y-coordinate of the location (State Plane Illinois East NAD 1983 projection). |
+| **Year** | `Integer` | The year the incident occurred. |
+| **Updated On** | `String/DateTime` | Date and time the record was last updated in the database. |
+| **Latitude** | `Float` | The latitude of the location (WGS84). |
+| **Longitude** | `Float` | The longitude of the location (WGS84). |
+| **Location** | `String` | A combined tuple of the (Latitude, Longitude) formatted for mapping applications. |
+
+
+# Due to GitHub file size limits, the full datasets are hosted externally.
 
 ### Files
 - raw_data.csv — original dataset
