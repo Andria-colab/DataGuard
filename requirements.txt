@@ -1,11 +1,7 @@
-# Python version required: 3.12.4
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-lightgbm
-xgboost
-scipy
-jupyter
-notebook
+matplotlib==3.9.2
+numpy==2.0.2
+pandas==2.3.3
+scikit-learn==1.7.1
+scipy==1.16.1
+seaborn==0.13.2
+xgboost==3.1.3
