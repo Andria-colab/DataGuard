@@ -1,3 +1,37 @@
+# Are Some Crimes Easier to Predict Than Others?
+
+## Team Members
+- Andria Beridze
+- Dachi Khelashvili
+- Mariam Tchubabria
+
+
+## Project Overview
+
+The goal of this project is to analyze whether **some types of crimes are easier to predict than others**, specifically in terms of whether they result in an **arrest**.
+
+Using a large real-world crime dataset, multiple machine learning models are trained and evaluated to predict arrest outcomes. The performance of these models is compared across crime types to better understand which crimes are more predictable.
+
+
+## Problem Statement and Objectives
+
+### Problem Statement
+Crime prediction is challenging due to strong class imbalance and complex relationships between crime type, time, and location. In most cases, crimes do not lead to an arrest, meaning a naive model could achieve high accuracy by always predicting No Arrest.
+
+### Objectives
+- Clean and preprocess raw crime data for machine learning
+- Prepare separate feature sets for different model types
+- Handle missing values, outliers, and inconsistent entries
+- Perform feature engineering on time, location, and crime attributes
+- Train and evaluate multiple machine learning models
+- Compare model performance across different crime types
+- Visualize crime distributions, arrest rates, and model results
+- Predict whether a crime leads to an arrest
+- Compare predictability across different crime types
+- Properly handle class imbalance
+- Evaluate multiple machine learning models
+- Determine whether advanced models outperform simpler ones
+
 ## Dataset
 
 Due to GitHub file size limits, the full datasets are hosted externally.
@@ -31,3 +65,8 @@ XGBoost builds decision trees one at a time, with each new tree focusing on corr
 Most crimes in the dataset do not lead to an arrest, so a basic model could achieve high accuracy by always predicting “No Arrest.” To avoid this, I used the scale_pos_weight parameter in XGBoost, which forces the model to pay more attention to the minority class (actual arrests).
 
 The dataset is very large and initially caused kernel crashes. XGBoost is optimized for speed and memory efficiency, allowing me to train on over 100,000 rows without system issues. It also captures complex, nonlinear relationships between crime type, location, and time that simpler models would miss.
+
+
+# Results Summary
+
+In the end of each notebook there is detailed description of results.
